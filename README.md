@@ -183,3 +183,8 @@ CollabDraw follows a client-server architecture.
                     │      User 2         │
                     │   React Frontend    │
                     └─────────────────────┘
+### Deployment Note
+
+The backend is deployed on Render's free hosting tier. When the service has been inactive for some time, it may enter a sleeping state. The first request after inactivity can therefore take longer while the service starts up.
+
+Once the backend is active, subsequent requests and Socket.IO connections operate normally.
